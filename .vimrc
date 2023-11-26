@@ -25,6 +25,9 @@ set tabstop=4
 " Use space characters instead of tabs
 set expandtab
 
+" Watch for file changes
+set autoread
+
 " Do not save backup files
 set nobackup
 
@@ -60,3 +63,4 @@ let g:netrw_winsize = 25
 
 " map ctrl-n to :Lexplore
 map <C-l> :Lexplore <CR>
+

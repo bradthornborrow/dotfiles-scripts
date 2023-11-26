@@ -1,4 +1,6 @@
-#!/bin/zsh
+#
+# ~/.zprofile
+#
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -19,4 +21,3 @@ alias pip="/usr/bin/pip3"
 
 # Default pfetch setup
 export PF_INFO="ascii host os kernel memory pkgs shell uptime palette"
-
