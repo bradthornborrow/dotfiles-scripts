@@ -1,3 +1,4 @@
+#
 # ~/.bash_aliases: this file is run by .bashrc if it exists
 #
 # Add alias for git dotfiles sync command

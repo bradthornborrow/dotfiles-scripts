@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
 change_background()
 {
@@ -13,6 +13,9 @@ change_background()
 }
 
 main()
+if [ "$(uname)" == "Darwin" ]; then
+  osascript $HOME/Library/Mobile\ Documents/com~apple~ScriptEditor2/Documents/Update\ Wallpaper.scpt
+else
 {
   local DISPLAY=:0 # ensure this is set
   if [ -v "WALLPAPER" ]; then
@@ -27,5 +30,6 @@ main()
   random_wallpaper=$( ls $DIR/* | shuf -n 1 )
   change_background "$random_wallpaper"
 }
+fi
 
 main "$@"
