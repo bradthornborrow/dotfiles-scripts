@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/bft/.local/bin/update-wallpaper.sh
+Hidden=false
+X-GNOME-Autostart-enabled=true
+Name=Update Wallpaper
