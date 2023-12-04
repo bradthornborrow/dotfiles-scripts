@@ -7,7 +7,9 @@
 # Lincensed under the MIT License.
 # Copyright (c) 2017 Ben Godfrey
 
-gsettings set org.gnome.desktop.app-folders folder-children "['accessories', 'development', 'games', 'graphics', 'internet', 'office', 'science', 'sound---video', 'system-tools', 'universal-access']"
+# gsettings set org.gnome.shell app-picker-layout "[]"
+
+gsettings set org.gnome.desktop.app-folders folder-children "['accessories', 'development', 'games', 'graphics', 'internet', 'office', 'science', 'sound---video', 'settings', 'system-tools', 'universal-access']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/accessories/ name "Accessories"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/accessories/ categories "['Utility']"
@@ -33,8 +35,11 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/sound---video/ name "Sound & Video"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/sound---video/ categories "['AudioVideo', 'Audio', 'Video']"
 
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/system-tools/ name "Settings"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/system-tools/ categories "['Settings']"
+
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/system-tools/ name "System Tools"
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/system-tools/ categories "['System', 'Settings']"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/system-tools/ categories "['System']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/universal-access/ name "Universal Access"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/universal-access/ categories "['Accessibility']"
