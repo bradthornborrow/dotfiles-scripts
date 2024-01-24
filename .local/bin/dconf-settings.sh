@@ -1,16 +1,16 @@
 #!/bin/bash
 
 case "$1" in
-  "export")
+  "backup")
     # Backup Gnome settings
     dconf dump / > $HOME/.config/dconf/dconf-settings.ini
     ;;
-  "import")
+  "restore")
     # Restore Gnome settings
     dconf load / < $HOME/.config/dconf/dconf-settings.ini
     ;;
   *)
-    echo "Please specify 'export' or 'import' only."
+    echo "Please specify 'backup' or 'restore' only."
     exit 1
     ;;
 esac
