@@ -14,7 +14,7 @@ change_background()
 
 main()
 if [ "$(uname)" == "Darwin" ]; then
-  osascript $HOME/Library/Mobile\ Documents/com~apple~ScriptEditor2/Documents/Update\ Wallpaper.scpt
+    killall WallpaperAgent
 else
 {
   local DISPLAY=:0 # ensure this is set

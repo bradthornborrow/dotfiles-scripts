@@ -9,8 +9,6 @@ if [ $# -eq 0 ]; then
 fi
 
 SRC=nas.local
-PATHS=(DLNA Incoming Public)
-
 read -sp "Enter password for NAS: " PASSWORD
 echo
 
@@ -36,6 +34,9 @@ else
   exit
 fi
 
+# Volumes to backup
+PATHS=(DLNA Incoming Public)
+
 for VOLUME in "${PATHS[@]}"; do
 	echo "Syncing volume: $VOLUME"
 	SRC_PATH=/tmp/$SRC
@@ -52,3 +53,4 @@ for VOLUME in "${PATHS[@]}"; do
 	  exit
 	fi
 done
+

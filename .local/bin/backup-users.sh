@@ -8,7 +8,7 @@ if [ $# -eq 0 ]; then
     exit 0
 fi
 
-# List of user home folders to backup 
+# List of user home folders for backup
 PATHS=( BFT )
 
 for FOLDER in "${PATHS[@]}"; do
@@ -19,3 +19,4 @@ for FOLDER in "${PATHS[@]}"; do
 	echo ""
 	sleep 2
 done
+
