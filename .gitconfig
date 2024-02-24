@@ -1,5 +1,5 @@
-[user]
-	email = brad@thedeskofbrad.ca
-	name = Brad Thornborrow
 [init]
 	defaultBranch = master
+[user]
+	name = Brad Thornborrow
+	email = brad@thedeskofbrad.ca
