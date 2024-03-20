@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=iCloud
+Categories=Office
+GenericName=Office
+Type=Application
+Exec=microsoft-edge --app=https://icloud.com
+Icon=icloud.png
+Comment=Apple iCloud site
