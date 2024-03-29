@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Apple Music
+Categories=Audio
+GenericName=Audio
+Type=Application
+Exec=microsoft-edge --app=https://music.apple.com
+Icon=apple-music.png
+Comment=Apple Music Web Player
