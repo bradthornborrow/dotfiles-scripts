@@ -7,7 +7,7 @@
 gsettings set org.gnome.shell app-picker-layout "[]"
 gsettings reset-recursively org.gnome.desktop.app-folders
 
-gsettings set org.gnome.desktop.app-folders folder-children "['accessories', 'console', 'games', 'media', 'network', 'office', 'settings', 'system']"
+gsettings set org.gnome.desktop.app-folders folder-children "['accessories', 'console', 'games', 'media', 'network', 'office', 'settings']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/accessories/ name "Accessories"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/accessories/ categories "['Utility']"
@@ -27,8 +27,8 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/office/ name "Office"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/office/ categories "['Office','Development']"
 
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/system/ name "System"
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/system/ categories "['System']"
+# gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/system/ name "System"
+# gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/system/ categories "['System']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/settings/ name "Settings"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/settings/ categories "['Settings','DesktopSettings']"
