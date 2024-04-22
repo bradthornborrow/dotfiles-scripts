@@ -21,7 +21,7 @@ else
   if [ -v "WALLPAPER" ]; then
     local DIR=$WALLPAPER
   else
-    local DIR="$HOME/.config/wallpaper"
+    local DIR="$HOME/.local/share/backgrounds"
   fi
   until [ -d "$DIR" ]
   do
