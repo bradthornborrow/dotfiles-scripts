@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Microsoft Office
+Categories=Office
+GenericName=Microsoft Office
+Type=Application
+Exec=microsoft-edge --app=https://www.microsoft365.com/?auth=1
+Icon=microsoft-365.png
+Comment=Microsoft Office 365
