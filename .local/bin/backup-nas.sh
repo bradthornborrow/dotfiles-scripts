@@ -35,7 +35,7 @@ else
 fi
 
 # Volumes to backup
-PATHS=(DLNA Incoming Public)
+PATHS=(Incoming Public)
 
 for VOLUME in "${PATHS[@]}"; do
 	echo "Syncing volume: $VOLUME"
