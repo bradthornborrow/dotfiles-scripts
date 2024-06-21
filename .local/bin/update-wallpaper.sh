@@ -4,7 +4,7 @@ change_background()
 {
     FILE="$(readlink -f "$1" )"
     echo changing to "$FILE"
-    if [ "$GDMSESSION" == "gnome" ] || [ "$GDMSESSION" == "ubuntu" ]; then
+    if [ "$GDMSESSION" == "ubuntu" ] || [ "$GDMSESSION" == "budgie-desktop" ]; then
         gsettings set org.gnome.desktop.background picture-uri "file://$FILE"
         gsettings set org.gnome.desktop.background picture-uri-dark "file://$FILE"
     else
