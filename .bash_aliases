@@ -8,4 +8,4 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 export EDITOR=vi
 
 # Default pfetch setup
-export PF_INFO="ascii host os kernel memory pkgs uptime palette"
+export BF_INFO="ascii host os kernel memory pkgs uptime palette"
