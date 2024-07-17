@@ -3,11 +3,11 @@
 case "$1" in
   "backup")
     # Backup Gnome settings
-    dconf dump / > $HOME/.config/dconf/dconf-settings.ini
+    dconf dump / > $HOME/.config/dconf/dconf-`hostname -s`.ini
     ;;
   "restore")
     # Restore Gnome settings
-    dconf load / < $HOME/.config/dconf/dconf-settings.ini
+    dconf load / < $HOME/.config/dconf/dconf-`hostname -s`.ini
     ;;
   *)
     echo "Please specify 'backup' or 'restore' only."
