@@ -8,15 +8,5 @@ if [ $# -eq 0 ]; then
     exit 0
 fi
 
-# List of user home folders for backup
-PATHS=( BFT )
-
-for FOLDER in "${PATHS[@]}"; do
-	echo "Syncing folder: $FOLDER"
-	SRC_PATH=/Users/$FOLDER/
-	DST_PATH=$1/Backup/$FOLDER
-	rsync -rltvWh $2 --delete --exclude '.DS_Store' --exclude '.Trash*' --exclude 'Library/CloudStorage/ShellFish'  --modify-window=2 $SRC_PATH $DST_PATH
-	echo ""
-	sleep 2
-done
-
+echo "Syncing folder: $HOME"
+rsync -rltvWh $2 --delete --exclude '.DS_Store' --exclude '.Trash*' --exclude 'Library/CloudStorage/ShellFish'  --modify-window=2 $HOME $1$HOME
