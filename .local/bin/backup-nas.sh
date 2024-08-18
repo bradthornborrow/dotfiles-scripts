@@ -15,25 +15,6 @@ echo
 # URLencode password to avoid special character issues
 PASSWORD=$(echo -ne "$PASSWORD" | xxd -plain | sed 's/\(..\)/%\1/g' )
 
-# Sync Backup folders from NAS Backup volume
-SRC_PATH=/tmp/$SRC
-mkdir $SRC_PATH
-mount -t smbfs //nas:$PASSWORD@$SRC/Backup $SRC_PATH
-if [ $? -eq 0 ]; then
-  for DIR in $SRC_PATH/* ; do
-    DIR="${DIR##*/}"
-    echo "Syncing volume: Backup/$DIR"
-    rsync -rltvWh $2 --delete --modify-window=2 --exclude=.* $SRC_PATH/$DIR/ $1/Backup/$DIR
-  done
-  echo ""
-  sleep 2
-  diskutil unmount $SRC_PATH
-  rmdir $SRC_PATH
-else
-  echo "Mount failed, scripted exiting"
-  exit
-fi
-
 # Volumes to backup
 PATHS=(Incoming Public)
 

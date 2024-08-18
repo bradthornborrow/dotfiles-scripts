@@ -14,7 +14,7 @@ PATHS=( BFT Shared )
 for FOLDER in "${PATHS[@]}"; do
 	echo "Syncing folder: $FOLDER"
 	SRC_PATH=/Users/$FOLDER/
-	DST_PATH=$1/Backup/$FOLDER
+	DST_PATH=$1/Users/$FOLDER
 	rsync -rltvWh $2 --delete --exclude '.DS_Store' --exclude '.Trash*' --exclude 'Library/CloudStorage/ShellFish'  --modify-window=2 $SRC_PATH $DST_PATH
 	echo ""
 	sleep 2
