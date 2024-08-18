@@ -9,7 +9,7 @@ if [ $# -eq 0 ]; then
 fi
 
 # List of user home folders for backup
-PATHS=( BFT )
+PATHS=( BFT Shared )
 
 for FOLDER in "${PATHS[@]}"; do
 	echo "Syncing folder: $FOLDER"
