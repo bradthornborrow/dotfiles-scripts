@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This script clones all Gists for a user into the current directory
+# This script clones all Gists for user into the current directory
 #
 if [ $# -eq 0 ]
   then
