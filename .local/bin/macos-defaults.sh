@@ -231,10 +231,17 @@ defaults write com.apple.dock autohide -bool true
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
-# Add a spacer to the left side of the Dock (where the applications are)
-#defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-# Add a spacer to the right side of the Dock (where the Trash is)
-#defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
+# Update number of Launchpad columns
+defaults write com.apple.dock springboard-columns -int 7
+
+# Update number of Launchpad rows
+defaults write com.apple.dock springboard-rows -int 4
+
+# Reset Launchpad icons to default positions
+defaults write com.apple.dock ResetLaunchPad -bool TRUE
+
+# Restart Dock
+killall Dock
 
 ###############################################################################
 # Spotlight                                                                   #
