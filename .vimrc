@@ -32,7 +32,7 @@ set autoread
 set nobackup
 
 " Do not let cursor scroll below or above N number of lines when scrolling
-set scrolloff=10
+set scrolloff=4
 
 " Do not wrap lines
 set nowrap
@@ -64,3 +64,5 @@ let g:netrw_winsize = 25
 " map ctrl-n to :Lexplore
 map <C-l> :Lexplore <CR>
 
+" enable filename and cursor position on status bar
+:set ruler
