@@ -2,11 +2,11 @@
 
 case "$1" in
   "backup")
-    # Backup Gnome settings
+    # Backup dconf settings
     dconf dump / > $HOME/.config/dconf/`hostname -s`.ini
     ;;
   "restore")
-    # Restore Gnome settings
+    # Restore dconf settings
     dconf load / < $HOME/.config/dconf/`hostname -s`.ini
     ;;
   *)
