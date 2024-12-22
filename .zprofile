@@ -20,3 +20,12 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Default pfetch setup
 export PF_INFO="ascii host os kernel memory pkgs shell uptime palette"
+
+##
+# Your previous /Users/BFT/.zprofile file was backed up as /Users/BFT/.zprofile.macports-saved_2024-12-22_at_10:59:16
+##
+
+# MacPorts Installer addition on 2024-12-22_at_10:59:16: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
