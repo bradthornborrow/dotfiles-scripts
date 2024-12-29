@@ -1,0 +1,9 @@
+/* App Grid */
+.icon-grid {
+  font-size: 11pt;
+}
+
+.app-grid-running-dot {
+  height: 0px;
+  width: 0px; 
+}
