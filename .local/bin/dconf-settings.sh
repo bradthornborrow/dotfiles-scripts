@@ -2,16 +2,16 @@
 HOST="$(hostname -s | tr '[:upper:]' '[:lower:]')"
 
 case "$1" in
-  "backup")
-    # Backup dconf settings
+  "export")
+    # Export dconf settings
     dconf dump / > $HOME/.config/dconf/$HOST.ini
     ;;
-  "restore")
-    # Restore dconf settings
+  "import")
+    # Import dconf settings
     dconf load / < $HOME/.config/dconf/$HOST.ini
     ;;
   *)
-    echo "Please specify 'backup' or 'restore' only."
+    echo "Please specify 'export' or 'import' only."
     exit 1
     ;;
 esac
