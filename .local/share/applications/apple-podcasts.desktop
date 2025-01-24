@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Apple Podcasts
+Categories=Audio
+GenericName=Audio
+Type=Application
+Exec=microsoft-edge --app=https://podcasts.apple.com
+Icon=apple-podcasts.png
+Comment=Apple Podcasts
