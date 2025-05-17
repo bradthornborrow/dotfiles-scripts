@@ -9,6 +9,9 @@ if [ $# -eq 0 ]; then
 fi
 
 SRC=nas.local
+SRC_PATH=/tmp/$SRC
+mkdir $SRC_PATH
+
 read -sp "Enter password for NAS: " PASSWORD
 echo
 
@@ -16,22 +19,21 @@ echo
 PASSWORD=$(echo -ne "$PASSWORD" | xxd -plain | sed 's/\(..\)/%\1/g' )
 
 # Volumes to backup
-PATHS=(DLNA Incoming Public)
+PATHS=(DLNA Public)
 
 for VOLUME in "${PATHS[@]}"; do
 	echo "Syncing volume: $VOLUME"
-	SRC_PATH=/tmp/$SRC
-	mkdir $SRC_PATH
 	mount -t smbfs //nas:$PASSWORD@$SRC/$VOLUME $SRC_PATH
 	if [ $? -eq 0 ]; then
 	  rsync -rltvWh $2 --delete --modify-window=2 --exclude=.* $SRC_PATH/ $1/$VOLUME
 	  echo ""
 	  sleep 2
 	  diskutil unmount $SRC_PATH
-	  rmdir $SRC_PATH
+      echo ""
 	else
 	  echo "Mount failed, scripted exiting"
 	  exit
 	fi
 done
 
+rmdir $SRC_PATH

@@ -9,4 +9,4 @@ if [ $# -eq 0 ]
 fi
 
 curl -s https://api.github.com/users/$1/gists | jq '.[] | .files | .[] | .raw_url' | xargs -n 1 curl -O
-for f in *.md; do mv -i "$f" "$(echo "$f" | sed 's/%20/ /g')"; done
+for f in *.md; do mv "$f" "$(echo "$f" | sed 's/%20/ /g')"; done
