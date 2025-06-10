@@ -31,7 +31,7 @@ conky.text = [[
     $alignr\
     ${time %H:%M}
     $alignr\
-    ${voffset -30}\
+    ${voffset -36}\
     ${font Ubuntu:size=36:style=Thin}${color0}\
     ${time %A %d %B}
 ]]
