@@ -19,7 +19,7 @@ echo
 PASSWORD=$(echo -ne "$PASSWORD" | xxd -plain | sed 's/\(..\)/%\1/g' )
 
 # Volumes to backup
-PATHS=(DLNA Public)
+PATHS=(Incoming Public)
 
 for VOLUME in "${PATHS[@]}"; do
 	echo "Syncing volume: $VOLUME"
