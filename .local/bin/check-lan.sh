@@ -2,7 +2,7 @@
 
 # cron script for checking wlan connectivity
 # change 192.168.1.1 to whatever IP you want to check.
-IP_FOR_TEST="192.168.0.1"
+IP_FOR_TEST="192.168.1.1"
 PING_COUNT=1
 INTERFACE="wlan0"
 

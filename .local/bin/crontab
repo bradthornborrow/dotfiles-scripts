@@ -18,11 +18,11 @@ MAILTO=brad.thornborrow@gmail.com
 #
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
-# m h dom mon dow   command
+# m h dom mon dow command
 
 # Run Annoy-a-Tron script every 2 minutes
-*/2 * * * * /home/pi/bin/cricket.sh >/dev/null 2>&1
+*/2 * * * * /home/pi/.local/bin/cricket.sh >/dev/null 2>&1
 
 # Reboot if network down
-*/10 * * * * /home/pi/bin/check-lan.sh
+*/10 * * * * /home/pi/.local/bin/check-lan.sh
 
