@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# Name to use for dconf settings file
 HOST="$(hostname -s | tr '[:upper:]' '[:lower:]')"
 
 case "$1" in
