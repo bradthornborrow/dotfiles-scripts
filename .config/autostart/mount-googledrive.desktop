@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=sh -c "rclone --vfs-cache-mode full mount googledrive: ~/GoogleDrive"
+Exec=sh -c "rclone --vfs-cache-mode full mount googledrive: ~/'Desktop/Google Drive'"
 Hidden=false
 X-GNOME-Autostart-enabled=true
 Name=Mount Google Drive
