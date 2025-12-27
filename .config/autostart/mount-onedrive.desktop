@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=sh -c "rclone --vfs-cache-mode full mount onedrive: ~/Desktop/OneDrive"
+Exec=sh -c "rclone --vfs-cache-mode full mount onedrive: ~/OneDrive"
 Hidden=false
 X-GNOME-Autostart-enabled=true
 Name=Mount OneDrive
