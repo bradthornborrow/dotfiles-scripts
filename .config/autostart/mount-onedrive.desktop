@@ -2,5 +2,5 @@
 Type=Application
 Exec=sh -c "rclone --vfs-cache-mode full mount onedrive: ~/OneDrive"
 Hidden=false
-X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-enabled=false
 Name=Mount OneDrive
