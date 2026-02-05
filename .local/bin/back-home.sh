@@ -10,5 +10,5 @@ fi
 
 # List of user home folders for backup
 echo "Syncing folder: $HOME"
-echo rsync -rltvWh $2 --delete --exclude '.DS_Store' --exclude '.Trash*' --exclude 'Library/CloudStorage/ShellFish'  --modify-window=2 $HOME $1$HOME
+rsync -rltvWh $2 --delete --exclude '*cache*/' --exclude '*Cache*/' --exclude '.DS_Store' --exclude '.Trash/' --exclude 'Library/CloudStorage/ShellFish'  --modify-window=2 $HOME/ $1$HOME
 echo ""
