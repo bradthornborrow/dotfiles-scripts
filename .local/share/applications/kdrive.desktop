@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=kDrive
+Exec=/usr/local/bin/kDrive.AppImage
+Comment=kDrive applications for Linux
+StartupNotify=true
+Terminal=false
+Icon=kDrive.png
+Type=Application
+Categories=System;FileTools;Utility
