@@ -26,7 +26,7 @@ for VOLUME in "${PATHS[@]}"; do
 	mount -t smbfs //nas:$PASSWORD@$SRC/$VOLUME $SRC_PATH
 	if [ $? -eq 0 ]; then
 	  # rsync -rltvWh $2 --delete --modify-window=2 --exclude=.* $SRC_PATH/ $1/$VOLUME
- 	  rclone sync $2 --exclude='.*' --modify-window=2 --multi-thread-streams=4 -P -L --metadata $SRC_PATH/ $1/$VOLUME
+ 	  rclone sync $2 --exclude='.*' --modify-window=2s --multi-thread-streams=4 -P -L --metadata $SRC_PATH/ $1/$VOLUME
       echo ""
 	  sleep 2
 	  diskutil unmount $SRC_PATH
