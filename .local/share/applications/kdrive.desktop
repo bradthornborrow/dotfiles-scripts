@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=kDrive Client
-Exec=/usr/local/bin/kdrive.AppImage
+Name=kDrive
+Exec=/home/bft/Applications/kDrive.AppImage
 Comment=kDrive client for Linux
 StartupNotify=true
 Terminal=false
-Icon=kdrive.png
+Icon=kDrive.png
 Type=Application
 Categories=System;FileTools;Utility
