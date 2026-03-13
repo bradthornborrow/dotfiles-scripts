@@ -6,6 +6,3 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Set vi as default text editor
 export EDITOR=vi
-
-# Default pfetch setup
-export PF_INFO="ascii host os kernel memory pkgs uptime palette"
