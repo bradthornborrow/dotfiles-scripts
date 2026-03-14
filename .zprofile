@@ -18,5 +18,5 @@ export EDITOR=vi
 # Add alias for git dotfiles sync command
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-# Default pfetch setup
-export PF_INFO="ascii host os kernel memory pkgs shell uptime palette"
+# Add Homebrew to PATH
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"

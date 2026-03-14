@@ -4,6 +4,6 @@ Exec=/home/bft/Applications/kDrive.AppImage
 Comment=kDrive client for Linux
 StartupNotify=true
 Terminal=false
-Icon=kDrive.png
+Icon=kdrive.png
 Type=Application
 Categories=System;FileTools;Utility

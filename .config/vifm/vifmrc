@@ -1,8 +1,6 @@
 " vim: filetype=vifm :
-" Sample configuration file for vifm (last updated: 31 August, 2021)
-" You can edit this file by hand.
+"
 " The " character at the beginning of a line comments out the line.
-" Blank lines are ignored.
 " The basic format for each item is shown with an example.
 
 " ------------------------------------------------------------------------------
