@@ -13,7 +13,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # Set vi as default text editor
-export EDITOR=vi
+export EDITOR=vim
 
 # Add alias for git dotfiles sync command
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
