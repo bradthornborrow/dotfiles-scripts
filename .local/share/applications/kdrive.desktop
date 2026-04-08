@@ -1,9 +1,12 @@
 [Desktop Entry]
 Name=kDrive
-Exec=/home/bft/Applications/kDrive.AppImage
+GenericName=File Synchronizer
+Exec='/home/bft/Applications/kDrive.AppImage'
 Comment=kDrive client for Linux
-StartupNotify=true
 Terminal=false
-Icon=kdrive.png
+Icon=kdrive
+Categories=Network
 Type=Application
-Categories=System;FileTools;Utility
+StartupNotify=false
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=10
