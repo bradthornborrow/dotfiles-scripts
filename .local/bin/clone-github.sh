@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This script clones all GitHub repositories for user into the current directory
+# This script clones all Github repositories for user into the current directory
 #
 if [ $# -eq 0 ]
   then
@@ -8,7 +8,7 @@ if [ $# -eq 0 ]
     exit;
 fi
 
-REPO_LIST=$(curl -s https://api.github.com/users/$1/repos?per_page=1000 |grep clone_url |awk '{print $2}'| sed 's/"\(.*\)",/\1/')
+REPO_LIST=$(curl -s https://api.github.com/users/$1/repos?per_page=1000 | jq -r '.[].ssh_url')
 
 for repo in $REPO_LIST;do
 
