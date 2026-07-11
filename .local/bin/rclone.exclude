@@ -1,0 +1,8 @@
+._*
+.DS_Store
+.Trash/
+Library/CloudStorage/ShellFish/**
+Library/IntelligencePlatform/**
+Library/Trial/**
+*cache*/
+*Cache*/ 

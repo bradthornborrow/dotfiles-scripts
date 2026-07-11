@@ -19,14 +19,14 @@ echo
 PASSWORD=$(echo -ne "$PASSWORD" | xxd -plain | sed 's/\(..\)/%\1/g' )
 
 # Volumes to backup
-PATHS=(Public)
+PATHS=( DLNA Public )
 
 for VOLUME in "${PATHS[@]}"; do
 	echo "Syncing volume: $VOLUME"
 	mount -t smbfs //nas:$PASSWORD@$SRC/$VOLUME $SRC_PATH
 	if [ $? -eq 0 ]; then
 	  # rsync -rltvWh $2 --delete --modify-window=2 --exclude=.* $SRC_PATH/ $1/$VOLUME
- 	  rclone sync $2 --exclude='.*' --modify-window=2s --multi-thread-streams=4 -P -L --metadata $SRC_PATH/ $1/$VOLUME
+ 	  rclone sync $2 --exclude='.*' --modify-window=2s --delete-during --delete-excluded --progress --skip-links $SRC_PATH/ $1/$VOLUME
       echo ""
 	  sleep 2
 	  diskutil unmount $SRC_PATH
