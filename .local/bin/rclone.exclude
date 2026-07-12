@@ -1,3 +1,4 @@
+rclone.log
 ._*
 .DS_Store
 .Trash/
@@ -5,4 +6,4 @@ Library/CloudStorage/ShellFish/**
 Library/IntelligencePlatform/**
 Library/Trial/**
 *cache*/
-*Cache*/ 
+*Cache*/
