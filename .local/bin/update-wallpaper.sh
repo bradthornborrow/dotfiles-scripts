@@ -18,8 +18,8 @@ if [ "$(uname)" == "Darwin" ]; then
 else
 {
   local DISPLAY=:0 # ensure this is set
-  if [ -v "WALLPAPER" ]; then
-    local DIR=$WALLPAPER
+  if [ -d $HOME/kDrive/Pictures/Backgrounds ]; then
+    local DIR="$HOME/kDrive/Pictures/Backgrounds"
   else
     local DIR="$HOME/.local/share/backgrounds"
   fi
