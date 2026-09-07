@@ -1,5 +1,7 @@
 #!/bin/bash
 #
+# Wallpaper update script uses $WALLPAPER path if present
+# 
 change_background()
 {
     FILE="$(readlink -f "$1" )"
@@ -18,8 +20,8 @@ if [ "$(uname)" == "Darwin" ]; then
 else
 {
   local DISPLAY=:0 # ensure this is set
-  if [ -d $HOME/kDrive/Pictures/Backgrounds ]; then
-    local DIR="$HOME/kDrive/Pictures/Backgrounds"
+  if [ -n "$WALLPAPER" ]; then
+    local DIR=$WALLPAPER
   else
     local DIR="$HOME/.local/share/backgrounds"
   fi
